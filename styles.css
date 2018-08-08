@@ -1,0 +1,83 @@
+@font-face{
+  font-family: "hell";
+  src:  url('helvetica-black.woff') format('woff'), url('helvetica-black.ttf') format('ttf');
+}
+
+html{
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'hell', sans-serif;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    background: #ffffff;
+}
+
+.space {
+    height: 26vh;
+}
+
+.logo {
+    width: 149px;
+    height: 140px;
+    background-image: url('da_blue.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    transition: 300ms all ease-in-out;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}   
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+        transform: scale(0)
+    }
+    
+    90%{
+        opacity: 1;
+        transform: scale(1.02)
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0) scale(1)
+    }
+
+}
+
+.name {
+    font-size: 5.2rem;
+    /* color: #002f6c; */
+    color: #1C244A;
+    max-width: 96rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.icons {
+    margin: 0 auto;
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.icons .fab {
+    color: #1C244A;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.icons .fab:hover{
+    transform: scale(1.2)
+}
