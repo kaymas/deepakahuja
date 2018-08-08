@@ -23,6 +23,13 @@ body{
     height: 26vh;
 }
 
+
+@media (max-width: 625px) {
+    body .space {
+      height: 10vh; 
+    } 
+}
+
 .logo {
     width: 149px;
     height: 140px;
